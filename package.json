@@ -1,0 +1,22 @@
+{
+  "name": "impulse-ts-examples",
+  "version": "0.0.1",
+  "description": "impulse-ts Neural Network examples.",
+  "scripts": {
+    "build-dev": "webpack --config ./configs/dev.js",
+    "build-prod": "webpack --config ./configs/prod.js",
+    "prettier-write": "prettier --write \"examples/**/*.js\"",
+    "lint": "eslint . --ext .ts",
+    "lint-fix": "eslint . --ext .ts --fix"
+  },
+  "license": "Copyright Michał Baniowski",
+  "dependencies": {
+    "impulse-dataset-ts": "^0.0.9",
+    "impulse-math-ts": "^0.0.6",
+    "impulse-ts": "^0.0.8"
+  },
+  "main": "./dist/impulse-ts.js",
+  "devDependencies": {
+    "prettier": "^2.8.2"
+  }
+}
